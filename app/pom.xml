@@ -22,4 +22,34 @@
         </dependency>
     </dependencies>
 
+<!--    <build>-->
+<!--        <plugins>-->
+<!--            <plugin>-->
+<!--                <groupId>org.apache.maven.plugins</groupId>-->
+<!--                <artifactId>maven-compiler-plugin</artifactId>-->
+<!--                <version>3.8.1</version>-->
+<!--                <configuration>-->
+<!--                    <source>21</source>-->
+<!--                    <target>21</target>-->
+<!--                    <encoding>UTF-8</encoding>-->
+<!--&lt;!&ndash;                    <generatedSourcesDirectory>&ndash;&gt;-->
+<!--&lt;!&ndash;                        ${project.build.directory}/generated-sources/&ndash;&gt;-->
+<!--&lt;!&ndash;                    </generatedSourcesDirectory>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <annotationProcessors>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <annotationProcessor>&ndash;&gt;-->
+<!--&lt;!&ndash;                            ua.edu.ukma.processor.CustomProcessor&ndash;&gt;-->
+<!--&lt;!&ndash;                        </annotationProcessor>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </annotationProcessors>&ndash;&gt;-->
+<!--                    <annotationProcessorPaths>-->
+<!--                        <path>-->
+<!--                            <groupId>ua.edu.ukma</groupId>-->
+<!--                            <artifactId>annotations</artifactId>-->
+<!--                            <version>1.0-SNAPSHOT</version>-->
+<!--                        </path>-->
+<!--                    </annotationProcessorPaths>-->
+<!--                </configuration>-->
+<!--            </plugin>-->
+<!--        </plugins>-->
+<!--    </build>-->
+
 </project>

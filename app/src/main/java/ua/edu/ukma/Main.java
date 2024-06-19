@@ -24,6 +24,15 @@ public class Main {
 
         System.out.println("Invalid " + invalidPerson2);
         printViolations(validator.validate(invalidPerson2));
+        System.out.println();
+
+        Person person = new PersonBuilder()
+                .name("Paul")
+                .email("macscskacmkackacm")
+                .birthDate(LocalDate.now())
+                .build();
+        System.out.println("Created with Builder " + person);
+        printViolations(validator.validate(person));
     }
 
     private static void printViolations(List<Violation> violations) {

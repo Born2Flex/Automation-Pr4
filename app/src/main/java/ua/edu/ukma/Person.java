@@ -1,11 +1,13 @@
 package ua.edu.ukma;
 
+import ua.edu.ukma.annotations.compile.SimpleBuilder;
 import ua.edu.ukma.annotations.runtime.InPast;
 import ua.edu.ukma.annotations.runtime.NotNull;
 import ua.edu.ukma.annotations.runtime.ValidEmail;
 
 import java.time.LocalDate;
 
+@SimpleBuilder
 public class Person {
     @NotNull
     private String name;
