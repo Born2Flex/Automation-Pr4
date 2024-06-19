@@ -1,27 +1,18 @@
 package ua.edu.ukma;
 
-import ua.edu.ukma.annotations.InPast;
-import ua.edu.ukma.annotations.NotNull;
-import ua.edu.ukma.annotations.ValidEmail;
+import ua.edu.ukma.annotations.runtime.InPast;
+import ua.edu.ukma.annotations.runtime.NotNull;
+import ua.edu.ukma.annotations.runtime.ValidEmail;
 
 import java.time.LocalDate;
 
 public class Person {
-    @NotNull
-    private int test;
     @NotNull
     private String name;
     @ValidEmail
     private String email;
     @InPast
     private LocalDate birthDate;
-
-    public Person(int test, String name, String email, LocalDate birthDate) {
-        this.test = test;
-        this.name = name;
-        this.email = email;
-        this.birthDate = birthDate;
-    }
 
     public Person(String name, String email, LocalDate birthDate) {
         this.name = name;

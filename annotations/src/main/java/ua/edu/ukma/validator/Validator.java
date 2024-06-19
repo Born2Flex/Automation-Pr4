@@ -1,6 +1,8 @@
 package ua.edu.ukma.validator;
 
-import ua.edu.ukma.annotations.InPast;
+import ua.edu.ukma.annotations.runtime.InPast;
+import ua.edu.ukma.annotations.runtime.NotNull;
+import ua.edu.ukma.annotations.runtime.ValidEmail;
 
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Field;
@@ -20,9 +22,9 @@ public class Validator {
             Annotation[] declaredAnnotations = field.getDeclaredAnnotations();
             for (Annotation annotation : declaredAnnotations) {
                 try {
-                    if (annotation.annotationType().equals(ua.edu.ukma.annotations.NotNull.class)) {
+                    if (annotation.annotationType().equals(NotNull.class)) {
                         processNotNull(field, object, violations);
-                    } else if (annotation.annotationType().equals(ua.edu.ukma.annotations.ValidEmail.class)) {
+                    } else if (annotation.annotationType().equals(ValidEmail.class)) {
                         processEmail(field, object, violations);
                     } else if (annotation.annotationType().equals(InPast.class)) {
                         processInPast(field, object, violations);
